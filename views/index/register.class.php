@@ -20,13 +20,13 @@ class Register extends View
         <!-- middle row -->
         <div class="middle-row">
             <p>Please complete the entire form. All fields are required.</p>
-            <form action="verify" method="post" style="display: flex; flex-direction: column" >
+            <form action="index.php?action=login" method="post" style="display: flex; flex-direction: column" >
                 <input style="margin-bottom: 25px; color: #a9a9a9" type="text" value="Username" required >
                 <input style="margin-bottom: 25px;  color: #a9a9a9" type="text" value="Password, 5 characters minimum" required min="5">
                 <input style="margin-bottom: 25px; color: #a9a9a9" type="email" value="Email" required>
                 <input style="margin-bottom: 25px; color: #a9a9a9" type="text" value="First Name" required>
                 <input style="margin-bottom: 25px; color: #a9a9a9" type="text" value="Last Name" required>
-                <input action="verify" style="background-color: #000; color: #fff; padding: 12px; border: none;"type="submit" value="REGISTER">
+                <input action="login" style="background-color: #000; color: #fff; padding: 12px; border: none;"type="submit" value="REGISTER">
             </form>
 
         </div>

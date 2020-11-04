@@ -10,6 +10,21 @@
 class Login extends View
 {
     public function display() {
+
+//create an object of UserController
+        $user_controller = new UserController();
+
+//add your code below this line to complete this file
+        $action = "register";
+
+        if (isset($_GET['register']) && !(empty($_GET['register'])))
+            $action = $_GET['register'];
+
+
+//invoke appropriate method depending on action value
+        if ($action === 'login') {
+            $user_controller->Login();
+        }
     //call the header method defined in the parent class to add the header
     parent::header();
     ?>
@@ -34,6 +49,7 @@ class Login extends View
 
     </div>
     <?php
+
 
     //call the footer method defined in the parent class to add the footer
     parent::footer();
