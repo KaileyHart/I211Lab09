@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Author: Kailey Hart, Laura Fasig
+ * Author: Kailey Hart, Laura Fasig, Tatiana Perry
  * Date: 11/04/2020
  * Name: index.php
  * Description: Homepage
