@@ -47,7 +47,7 @@ class UserModel {
         }
         return false;
 
-        //password_hash($password , $algo [, $options ]) : false;
+        //password_hash($password , $algo) : false;
     }
 
     public function verify_user() {
@@ -62,6 +62,7 @@ class UserModel {
         if(!isset($_COOKIE[$cookie_name])) {
             return false;
         } else {
+            //password_verify ($password , $hash);
             return true;
         }
     }
@@ -75,6 +76,6 @@ class UserModel {
     public function reset_password() {
 
 
-        //password_hash($password , $algo [, $options ]) : false;
+        //password_hash($password , $algo) : false;
     }
 }
