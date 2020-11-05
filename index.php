@@ -14,19 +14,24 @@ require_once ("vendor/autoload.php");
 $user_controller = new UserController();
 
 //add your code below this line to complete this file
-$action = "register";
 
-if (isset($_GET['register']) && !(empty($_GET['register'])))
-    $action = $_GET['register'];
+$action = "register";
+if (isset($_GET['action']) && !(empty($_GET['action'])))
+    $action = $_GET['action'];
 
 
 //invoke appropriate method depending on action value
 if($action === 'register') {
+
     $user_controller->RegisterUser();
-    $action === "login";
-}
-else if ($action === 'login') {
+
+} else if ($action === 'login') {
+
     $user_controller->Login();
+}
+else if ($action === 'index') {
+
+    $user_controller->displayIndex();
 }
 else if ($action === 'verify') {
     $user_controller->Verify();
